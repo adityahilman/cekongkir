@@ -43,4 +43,5 @@ if ($err) {
  </select>
  <?php
 }
+include "getCost.php";
 ?>
