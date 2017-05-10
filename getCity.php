@@ -3,7 +3,7 @@
 $curl = curl_init();
 
 curl_setopt_array($curl, array(
-  CURLOPT_URL => "http://api.rajaongkir.com/starter/city?province=".$_GET['provinsi'],
+  CURLOPT_URL => "http://api.rajaongkir.com/starter/city?province=".$_POST['provinsi'],
   //CURLOPT_URL => "http://api.rajaongkir.com/starter/city?province=1",
   CURLOPT_RETURNTRANSFER => true,
   CURLOPT_ENCODING => "",
