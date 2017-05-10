@@ -1,6 +1,7 @@
 <?php
 
-$provinsi_id = $_POST['provinsi'];
+
+$destination = $_POST['kota'];
 $curl = curl_init();
 
 curl_setopt_array($curl, array(
@@ -11,7 +12,7 @@ curl_setopt_array($curl, array(
   CURLOPT_TIMEOUT => 30,
   CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
   CURLOPT_CUSTOMREQUEST => "POST",
-  CURLOPT_POSTFIELDS => "origin=6&destination=$provinsi_id&weight=1000&courier=jne",
+  CURLOPT_POSTFIELDS => "origin=6&city_id=154&province_id=6&destination=$id_kota&weight=1000&courier=jne",
   CURLOPT_HTTPHEADER => array(
     "content-type: application/x-www-form-urlencoded",
     "key: c1d4eabaec53e7128eba6b5757757f30"
@@ -27,4 +28,6 @@ if ($err) {
   echo "cURL Error #:" . $err;
 } else {
   echo $response;
+  //$harga = json_decode($response, true);
+  //echo $harga;
 }

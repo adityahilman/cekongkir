@@ -1,10 +1,12 @@
-<form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+<form method="POST" action="submit.php">
 	<?php
 	include "getProvince.php";
 	?>
 	<input type="submit" name="btnSubmit" id="btnSubmit" value="Submit"/>
 </form>
+
 <?php
+/*
 if (isset($_POST['btnSubmit']))
 {
 	$id_provinsi = $_POST['provinsi'];
@@ -13,3 +15,4 @@ if (isset($_POST['btnSubmit']))
 	include "getCity.php";
 
 }
+*/

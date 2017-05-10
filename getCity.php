@@ -35,7 +35,7 @@ if ($err) {
   $city_id=$value['city_id'];
   $city_name=$value['city_name'];
   ?>
-    <option value="<?php echo $city_id ?>" id="kota-<?php echo $city_id ?>"><?php echo $city_name ?></option>
+    <option value="<?php echo $city_id ?>" id="kota-<?php echo $city_id ?>"><?php echo "$city_id - $city_name"; ?></option>
   <?php
 
  }
@@ -43,5 +43,4 @@ if ($err) {
  </select>
  <?php
 }
-include "getCost.php";
 ?>
